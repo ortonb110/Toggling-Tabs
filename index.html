@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Segmented control</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="segmented" >
+            <table>
+                <tr>
+                    <td>Sort by price</td>
+                    <td >Sort by name</td>
+                    <td>Sort by relevance</td>
+                </tr>
+            </table>
+        </div>
+        <div class="select" >
+            <label>
+                <select onchange="checkSelection(event)">
+                    <option value="0">Sort by price</option>
+                    <option value="1">Sort  by name</option>
+                    <option value="2">Sort by relevance</option>
+                </select>
+            </label>
+        </div>
+    </main>
+</body>
+</html>

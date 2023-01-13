@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  background-color: #73B9FF;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+
+
+}
+
+
+@media screen and (max-width: 899px) {
+  .segmented {
+    display: none;
+  }
+
+  .select {
+    display: block;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    width: 370px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.7) inset;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.7) inset;
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.7) inset;
+
+
+    label {
+      select {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        border: 3px solid #5796FF;
+        transition: all 0.3s ease;
+        
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+    }
+
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .segmented {
+    display: block;
+    padding: 3rem 4rem;
+    background-color: #fff;
+    width: 800px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.7) inset;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.7) inset;
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.7) inset;
+
+
+
+    table {
+
+      width: 100%;
+      border-radius: 5px;
+      &, td {
+        border: 2px solid #5796FF;
+        border-spacing: 0;
+      }
+      td {
+        padding: 1rem 2.5rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: #5796FF;
+          color: white;
+        }
+      }
+    }
+
+
+  }
+
+  .select {
+    display: none;
+  }
+}
